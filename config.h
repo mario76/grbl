@@ -174,5 +174,35 @@
 // ---------------------------------------------------------------------------------------
 
 // TODO: Install compile-time option to send numeric status codes rather than strings.
+#define STEPPERS_DISABLE_DDR     DDRB
+#define STEPPERS_DISABLE_PORT    PORTB
+#define STEPPERS_DISABLE_BIT         0
 
+#define STEPPERS_ENABLE_DDR     DDRB
+#define STEPPERS_ENABLE_PORT    PORTB
+#define STEPPERS_ENABLE_BIT     0
+#define STEPPERS_ENABLE_VAL     0  // 0=low 1=high
+
+#define STEPPING_DDR       DDRD
+#define STEPPING_PORT      PORTD
+#define X_STEP_BIT           2
+#define Y_STEP_BIT           4
+#define Z_STEP_BIT           6
+#define X_DIRECTION_BIT      3
+#define Y_DIRECTION_BIT      5
+#define Z_DIRECTION_BIT      7
+
+#define LIMIT_DDR      DDRB
+#define LIMIT_PIN     PINB
+#define X_LIMIT_BIT          1
+#define Y_LIMIT_BIT          4
+#define Z_LIMIT_BIT          5
+
+#define SPINDLE_ENABLE_DDR DDRB
+#define SPINDLE_ENABLE_PORT PORTB
+#define SPINDLE_ENABLE_BIT 2
+
+#define SPINDLE_DIRECTION_DDR DDRB
+#define SPINDLE_DIRECTION_PORT PORTB
+#define SPINDLE_DIRECTION_BIT 3
 #endif
